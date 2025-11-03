@@ -52,14 +52,12 @@ The `FilamentSevenTheme` plugin allows you to set a custom primary color for you
 Filament provides predefined color palettes with proper shades (e.g. `500`, `600`, `700`), which are recommended for consistent UI.
 
 ```php
-use Resma\FilamentSevenTheme\FilamentSevenTheme;
+use KSeven\FilamentSevenTheme\FilamentSevenTheme;
 use Filament\Support\Colors\Color;
 
-$panel
-    ->plugins([
-        FilamentSevenTheme::make()
-            ->primaryColor(Color::Emerald), // Use Filament's Emerald color palette
-    ]);
+$panel->plugins([
+    FilamentSevenTheme::make()->primaryColor(Color::Emerald), // Use Filament's Emerald color palette
+]);
 ```
 ### Using a Custom Hex Color
 You can also pass a single hex value if you don’t want to use a palette:
