@@ -2,7 +2,8 @@
     "name": "kseven/filament-seven-theme",
     "description": "A modern, responsive, and customizable theme for FilamentPHP, designed to elevate your admin panel with a sleek interface and seamless user experience.",
     "keywords": [
-        "Resma",
+        "Laravel",
+        "kseven",
         "laravel",
         "filamentphp",
         "filament-seven-theme",
@@ -19,6 +20,7 @@
         {
             "name": "K'Seven",
             "email": "contato@kseven.dev.br",
+            "homepage": "https://www.kseven.dev.br/",
             "role": "Developer"
         }
     ],
@@ -48,9 +50,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                
-            ],
+            "providers": [],
             "aliases": {
                 "FilamentSevenTheme": "KSeven\\FilamentSevenTheme\\Facades\\FilamentSevenTheme"
             }
