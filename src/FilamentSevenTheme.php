@@ -14,6 +14,7 @@ class FilamentSevenTheme implements Plugin
      * @var array<string, string>|string
      */
     public array|string $primaryColor = Color::Blue;
+
     public function getId(): string
     {
         return 'filament-seven-theme';
@@ -26,11 +27,9 @@ class FilamentSevenTheme implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel
-            ->colors([
-                'primary' => $this->primaryColor,
-            ])
-            ->viteTheme('vendor/kseven/filament-seven-theme/resources/css/theme.css');
+        $panel->colors([
+            'primary' => $this->primaryColor,
+        ])->viteTheme('vendor/kseven/filament-seven-theme/resources/css/theme.css');
     }
 
     public function boot(Panel $panel): void
